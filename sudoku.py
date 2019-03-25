@@ -1,11 +1,13 @@
-import numpy as np
 import sys
 from datetime import datetime
 from functools import partial
-from PyQt5.QtWidgets import (QMainWindow, QApplication, QPushButton, QLineEdit,
-                             QErrorMessage, QDesktopWidget, QLabel)
+
+import numpy as np
+from PyQt5.QtCore import Qt, pyqtSlot
 from PyQt5.QtGui import QFont
-from PyQt5.QtCore import pyqtSlot, Qt
+from PyQt5.QtWidgets import (QApplication, QDesktopWidget, QErrorMessage,
+                             QLabel, QLineEdit, QMainWindow, QPushButton)
+
 from solver import solve_sudoku
 
 COLOR_A = '#0FC'
